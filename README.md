@@ -264,6 +264,57 @@
 
 <!-- SECTION:STATS:END -->
 
+<!-- SECTION:VISITOR_SNAKE:START -->
+<h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/conference-call.png" alt="访客图标" />&nbsp; 访客与贡献 · Visitors &amp; Contributions</h2>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
+</div>
+
+<!--
+  访客计数徽章（komarev / ghpvc）：以数字形式展示主页累计访问次数。
+  color=22D3EE 次强调青，style=for-the-badge 与全站徽章风格一致。
+  alt 说明用途，图像无法加载时降级为该文本。
+-->
+<div align="center">
+  <img
+    src="https://komarev.com/ghpvc/?username=yan-sheng-li&label=Profile+Views&color=22D3EE&style=for-the-badge"
+    alt="Profile Views - 主页累计访问次数"
+  />
+</div>
+
+<!--
+  贡献活跃度折线图：github-readme-activity-graph，展示近一年提交趋势。
+  <picture> 深/浅双色（深底天蓝线 / 白底深天蓝线），主题色一致；custom_title 中英双语（URL 编码）。
+-->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=yan-sheng-li&bg_color=0D1117&title_color=38BDF8&color=C9D1D9&line=22D3EE&point=2DD4BF&area=true&area_color=38BDF8&hide_border=true&custom_title=%E8%B4%A1%E7%8C%AE%E6%B4%BB%E8%B7%83%E5%BA%A6%20Contribution%20Graph" />
+    <img alt="yan-sheng-li 的贡献活跃度折线图 · Contribution Activity Graph（近一年提交趋势）" src="https://github-readme-activity-graph.vercel.app/graph?username=yan-sheng-li&bg_color=FFFFFF&title_color=0284C7&color=1F2328&line=0891B2&point=2DD4BF&area=true&area_color=38BDF8&hide_border=true&custom_title=%E8%B4%A1%E7%8C%AE%E6%B4%BB%E8%B7%83%E5%BA%A6%20Contribution%20Graph" />
+  </picture>
+</div>
+
+<!--
+  3D 立体贡献图：由每日刷新工作流经 yoshi389111/github-profile-3d-contrib 生成 profile-night-green.svg，
+  复制为 output 分支的 profile-3d.svg，README 引用，每日自动更新；alt 非空，资产未就绪时降级为 alt。
+-->
+<div align="center">
+  <img src="https://raw.githubusercontent.com/yan-sheng-li/yan-sheng-li/output/profile-3d.svg" alt="3D 立体贡献图 · 由工作流每日生成的贡献热图立体可视化（每日自动更新）" />
+</div>
+
+<!--
+  蛇形贡献动画：引用 output 分支预生成 SVG（由刷新工作流 Platane/snk 每 24h 生成）。
+  <picture> + <source media="(prefers-color-scheme: dark)"> 深色版 + 浅色 <img> 回退实现深/浅主题切换。
+  资产尚不存在或加载失败时，浏览器降级展示 img 的 alt 文本以说明该区块用途。
+-->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yan-sheng-li/yan-sheng-li/output/github-snake-dark.svg" />
+    <img alt="yan-sheng-li 的 GitHub 贡献热图蛇形动画" src="https://raw.githubusercontent.com/yan-sheng-li/yan-sheng-li/output/github-snake.svg" />
+  </picture>
+</div>
+
+<!-- SECTION:VISITOR_SNAKE:END -->
+
 <!-- SECTION:SOCIAL:START -->
 <h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/link.png" alt="联系图标" />&nbsp; 联系我 · Connect With Me</h2>
 <div align="center">
