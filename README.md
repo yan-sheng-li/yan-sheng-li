@@ -31,7 +31,7 @@
   <br />
   <img
     src="https://readme-typing-svg.demolab.com/?font=Ma+Shan+Zheng&size=36&duration=3500&pause=800&center=true&vCenter=true&width=680&height=100&repeat=true&color=0891B2&lines=yan-sheng-li;%E4%B8%80%E4%B8%AA%E7%97%B4%E8%BF%B7%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E7%94%9F;A%20Student%20Obsessed%20With%20Computer%20Tech;%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8%E6%89%8D%E6%98%AF%E7%8E%8B%E9%81%93;Learn%20By%20Doing%2C%20Master%20By%20Using"
-    alt="yan-sheng-li - 一个痴迷于计算机技术的学生"
+    alt="yan-sheng-li"
   />
   <br />
   <!-- 无限横向滚动跑马灯：手写 SMIL 动画 SVG，双拷贝无缝循环，边缘渐隐遮罩，本地资源稳定不破图 -->
@@ -50,19 +50,7 @@
 
 <h1 align="center">yan-sheng-li <sub>(he/him)</sub></h1>
 
-<p align="center">一个痴迷于计算机技术的学生 · A student obsessed with computer technology</p>
 
-<p align="center">
-  <img height="20" src="https://img.icons8.com/fluency/48/quote-left.png" alt="格言" />
-  <i>学习是永无止境的，学以致用才是王道！</i>
-  <img height="20" src="https://img.icons8.com/fluency/48/quote-right.png" alt="格言" />
-</p>
-
-<p align="center">
-  <img height="18" src="https://img.icons8.com/fluency/48/graduation-cap.png" alt="院校" /> <你的院校> · <Your University>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <img height="18" src="https://img.icons8.com/fluency/48/marker.png" alt="所在地" /> <你的城市> · <Your City>
-</p>
 
 <!-- 快捷入口：一进主页即可直达 网站 / B站 / 爱发电，并展示 GitHub 关注数；flat-square 轻量风格区别于底部社交区 -->
 <p align="center">
@@ -114,15 +102,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C Sharp" />
-  <img src="https://img.shields.io/badge/GDScript-478CBF?style=for-the-badge&logo=godotengine&logoColor=white" alt="GDScript" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
 </p>
 
 <h4 align="center"><img height="20" src="https://img.icons8.com/fluency/48/web.png" alt="前端图标" />&nbsp; 前端 · Frontend</h4>
@@ -139,28 +120,19 @@
 <h4 align="center"><img height="20" src="https://img.icons8.com/fluency/48/multiple-devices.png" alt="跨端桌面图标" />&nbsp; 跨端 &amp; 桌面 · Cross-Platform &amp; Desktop</h4>
 <p align="center">
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron" />
   <img src="https://img.shields.io/badge/Tauri-24C8DB?style=for-the-badge&logo=tauri&logoColor=white" alt="Tauri" />
-  <img src="https://img.shields.io/badge/PyQt-41CD52?style=for-the-badge&logo=qt&logoColor=white" alt="PyQt" />
 </p>
 
 <h4 align="center"><img height="20" src="https://img.icons8.com/fluency/48/server.png" alt="后端图标" />&nbsp; 后端 · Backend</h4>
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white" alt="Bun" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Gin-00ADD8?style=for-the-badge&logo=gin&logoColor=white" alt="Gin" />
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="dotNET" />
 </p>
 
 <h4 align="center"><img height="20" src="https://img.icons8.com/fluency/48/database.png" alt="数据库图标" />&nbsp; 数据库 &amp; 中间件 · Databases &amp; Middleware</h4>
 <p align="center">
-  <img src="https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logoColor=white" alt="SQL" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
   <img src="https://img.shields.io/badge/Redis-FF4438?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
   <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx" />
 </p>
@@ -174,17 +146,7 @@
   <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana" />
 </p>
 
-<h4 align="center"><img height="20" src="https://img.icons8.com/fluency/48/controller.png" alt="游戏多媒体图标" />&nbsp; 游戏 &amp; 多媒体 · Game &amp; Media</h4>
-<p align="center">
-  <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity" />
-  <img src="https://img.shields.io/badge/Godot-478CBF?style=for-the-badge&logo=godotengine&logoColor=white" alt="Godot" />
-  <img src="https://img.shields.io/badge/Unreal_Engine-0E1128?style=for-the-badge&logo=unrealengine&logoColor=white" alt="Unreal Engine" />
-  <img src="https://img.shields.io/badge/Blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white" alt="Blender" />
-  <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white" alt="Photoshop" />
-  <img src="https://img.shields.io/badge/Premiere_Pro-9999FF?style=for-the-badge&logo=adobepremierepro&logoColor=white" alt="Premiere Pro" />
-  <img src="https://img.shields.io/badge/OBS_Studio-302E31?style=for-the-badge&logo=obsstudio&logoColor=white" alt="OBS Studio" />
-  <img src="https://img.shields.io/badge/NetEase_ModSDK-38BDF8?style=for-the-badge" alt="NetEase ModSDK" />
-</p>
+
 
 <h4 align="center"><img height="20" src="https://img.icons8.com/fluency/48/maintenance.png" alt="工具平台图标" />&nbsp; 工具 &amp; 平台 · Tools &amp; Platforms</h4>
 <p align="center">
@@ -192,8 +154,6 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
   <img src="https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm" />
-  <img src="https://img.shields.io/badge/GoLand-000000?style=for-the-badge&logo=goland&logoColor=white" alt="GoLand" />
-  <img src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" alt="Visual Studio" />
   <img src="https://img.shields.io/badge/1Panel-0195FF?style=for-the-badge&logo=1panel&logoColor=white" alt="1Panel" />
   <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows" />
   <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
@@ -331,10 +291,8 @@
 -->
 <div align="center">
 
-[![个人网站 www.your-site.com](https://img.shields.io/badge/个人网站-www.your-site.com-38BDF8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.your-site.com)
-[![Bilibili 主页 哔哩哔哩](https://img.shields.io/badge/Bilibili-哔哩哔哩-FB7299?style=for-the-badge&logo=bilibili&logoColor=white)](https://space.bilibili.com/<你的UID>)
+[![个人网站 www.your-site.com](https://img.shields.io/badge/https://liyansheng.top-38BDF8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://liyansheng.top/)
 [![Gitee 主页 码云](https://img.shields.io/badge/Gitee-码云-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/<你的用户名>)
-[![爱发电 主页 Afdian](https://img.shields.io/badge/爱发电-Afdian-2DD4BF?style=for-the-badge&logo=afdian&logoColor=white)](https://ifdian.net/a/<你的爱发电ID>)
 [![邮箱 Email <你的邮箱>](https://img.shields.io/badge/邮箱_Email-<你的邮箱>-0891B2?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:<你的邮箱>)
 
 </div>
