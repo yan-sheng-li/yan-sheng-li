@@ -1,0 +1,243 @@
+﻿name: Refresh Dynamic Assets
+
+on:
+  schedule:
+    - cron: "30 2 * * *"        # 每日 UTC 02:30 运行一次（每 24h，满足需求 7.3/9.1）
+  workflow_dispatch:             # 支持手动触发
+  push:
+    branches: [main]             # 便于首次/改动后立即生成
+
+concurrency:
+  group: refresh-assets
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Generate snake svg (dark + light)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: yan-sheng-li
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Generate age card svg (auto-updating age)
+        run: |
+          mkdir -p dist
+          python3 - <<'PY'
+          from datetime import date
+          BIRTH = date(YYYY, M, D)  # TODO: 改为你的出生日期（此卡片用于每日计算年龄）
+          today = date.today()
+          years = today.year - BIRTH.year - ((today.month, today.day) < (BIRTH.month, BIRTH.day))
+          if (today.month, today.day) >= (BIRTH.month, BIRTH.day):
+              last = date(today.year, BIRTH.month, BIRTH.day)
+          else:
+              last = date(today.year - 1, BIRTH.month, BIRTH.day)
+          days = (today - last).days
+          total = (today - BIRTH).days
+          cn = "%d \u5c81 \u00b7 \u65b0\u7684\u4e00\u5c81\u5df2\u8d70\u8fc7 %d \u5929" % (years, days)
+          en = "%d years old  \u00b7  %d days on Earth" % (years, total)
+          svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="440" height="96" viewBox="0 0 440 96" role="img" aria-label="Age">
+            <style>
+              .card {{ fill: #FFFFFF; stroke: #D0D7DE; }}
+              .big  {{ fill: #0284C7; font: 700 22px 'Segoe UI','PingFang SC',sans-serif; }}
+              .sub  {{ fill: #1F2328; font: 600 14px 'Segoe UI','PingFang SC',sans-serif; }}
+              .en   {{ fill: #6E7781; font: 500 11px 'Segoe UI',sans-serif; }}
+              @media (prefers-color-scheme: dark) {{
+                .card {{ fill: #0D1117; stroke: #30363D; }}
+                .big  {{ fill: #38BDF8; }}
+                .sub  {{ fill: #C9D1D9; }}
+                .en   {{ fill: #8B949E; }}
+              }}
+            </style>
+            <defs>
+              <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#38BDF8"/>
+                <stop offset="0.5" stop-color="#22D3EE"/>
+                <stop offset="1" stop-color="#2DD4BF"/>
+              </linearGradient>
+            </defs>
+            <rect class="card" x="1" y="1" width="438" height="94" rx="14" stroke-width="1.5"/>
+            <rect x="1" y="1" width="438" height="5" rx="2.5" fill="url(#bar)"/>
+            <circle cx="46" cy="50" r="22" fill="none" stroke="url(#bar)" stroke-width="3"/>
+            <text x="46" y="58" text-anchor="middle" class="big">{yrs}</text>
+            <text x="86" y="44" class="sub">{cn}</text>
+            <text x="86" y="66" class="en">{en}</text>
+          </svg>'''.format(yrs=years, cn=cn, en=en)
+          open("dist/age.svg", "w", encoding="utf-8").write(svg)
+          print("age generated:", years, days, total)
+          PY
+
+      - name: Generate daily quote svg
+        continue-on-error: true
+        run: |
+          mkdir -p dist
+          python3 - <<'PY'
+          from datetime import date
+          quotes = [
+            ("学习是永无止境的，学以致用才是王道", "Learning never ends; applying it is the true way."),
+            ("先让它跑起来，再让它跑得快", "Make it work, then make it fast."),
+            ("代码是写给人看的，顺便让机器执行", "Code is written for humans to read."),
+            ("把复杂留给自己，把简单交给用户", "Keep the complexity, give away the simplicity."),
+            ("好的架构是一点点演化出来的", "Good architecture evolves step by step."),
+            ("与其抱怨黑暗，不如提灯前行", "Rather than curse the dark, carry a lamp forward."),
+            ("不积跬步，无以至千里", "A journey of a thousand miles begins with a step."),
+            ("纸上得来终觉浅，绝知此事要躬行", "Knowledge from books is shallow; practice is key."),
+            ("热爱可抵岁月漫长", "Passion outlasts the long years."),
+            ("保持好奇，持续创造", "Stay curious, keep creating."),
+            ("简单是可靠的前提", "Simplicity is the prerequisite for reliability."),
+            ("每天进步一点点", "A little progress every single day."),
+            ("过早优化是万恶之源", "Premature optimization is the root of all evil."),
+            ("能用简单方案解决的，就别用复杂的", "Prefer the simplest solution that works."),
+            ("先完成，再完美", "Done is better than perfect."),
+            ("读源码是最好的老师", "Reading source code is the best teacher."),
+            ("重构是持续偿还技术债", "Refactoring is paying down technical debt."),
+            ("测试给你重构的勇气", "Tests give you the courage to refactor."),
+            ("慢即是稳，稳即是快", "Slow is smooth, and smooth is fast."),
+            ("解决问题前，先定义问题", "Define the problem before you solve it."),
+            ("代码讲怎么做，注释讲为什么", "Code says how; comments say why."),
+            ("站在巨人的肩膀上", "Stand on the shoulders of giants."),
+            ("把每次提交都当作作品", "Treat every commit as a piece of craft."),
+            ("知其然，更要知其所以然", "Know not just how, but also why."),
+          ]
+          idx = date.today().timetuple().tm_yday % len(quotes)
+          cn, en = quotes[idx]
+          tmpl = '''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="72" viewBox="0 0 760 72" role="img" aria-label="quote">
+            <style>
+              .c { fill:#FFFFFF; stroke:#D0D7DE; }
+              .q { fill:#1F2328; font:600 18px 'Segoe UI','PingFang SC',sans-serif; }
+              .e { fill:#6E7781; font:italic 12px 'Segoe UI',sans-serif; }
+              @media (prefers-color-scheme: dark) { .c{fill:#0D1117;stroke:#30363D;} .q{fill:#C9D1D9;} .e{fill:#8B949E;} }
+            </style>
+            <defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38BDF8"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs>
+            <rect class="c" x="1" y="1" width="758" height="70" rx="12" stroke-width="1.5"/>
+            <rect x="1" y="1" width="6" height="70" rx="3" fill="url(#b)"/>
+            <text x="30" y="32" class="q">%(cn)s</text>
+            <text x="30" y="54" class="e">%(en)s</text>
+          </svg>'''
+          open("dist/quote.svg", "w", encoding="utf-8").write(tmpl % {"cn": cn, "en": en})
+          print("quote generated idx", idx)
+          PY
+
+      - name: Generate stats dashboard svg
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p dist
+          python3 - <<'PY'
+          import json, os, urllib.request
+          tok = os.environ.get("GH_TOKEN", "")
+          def api(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "profile-readme", "Authorization": "Bearer %s" % tok, "Accept": "application/vnd.github+json"})
+              return json.load(urllib.request.urlopen(req, timeout=30))
+          user = api("https://api.github.com/users/yan-sheng-li")
+          repos = api("https://api.github.com/users/yan-sheng-li/repos?per_page=100&type=owner")
+          stars = sum(r.get("stargazers_count", 0) for r in repos)
+          forks = sum(r.get("forks_count", 0) for r in repos)
+          followers = user.get("followers", 0)
+          public = user.get("public_repos", 0)
+          tiles = [(public, "Repos"), (stars, "Stars"), (forks, "Forks"), (followers, "Followers")]
+          cells = ""
+          for i, (num, lab) in enumerate(tiles):
+              cx = 95 + i * 190
+              cells += '<text x="%d" y="58" text-anchor="middle" class="num">%s</text>' % (cx, num)
+              cells += '<text x="%d" y="86" text-anchor="middle" class="lab">%s</text>' % (cx, lab)
+              if i > 0:
+                  cells += '<line x1="%d" y1="28" x2="%d" y2="92" class="sep"/>' % (i * 190, i * 190)
+          tmpl = '''<svg xmlns="http://www.w3.org/2000/svg" width="760" height="120" viewBox="0 0 760 120" role="img" aria-label="stats dashboard">
+            <style>
+              .c { fill:#FFFFFF; stroke:#D0D7DE; }
+              .num { fill:#0284C7; font:800 30px 'Segoe UI',sans-serif; }
+              .lab { fill:#1F2328; font:600 13px 'Segoe UI',sans-serif; letter-spacing:1px; }
+              .sep { stroke:#D0D7DE; stroke-width:1; }
+              @media (prefers-color-scheme: dark) { .c{fill:#0D1117;stroke:#30363D;} .num{fill:#38BDF8;} .lab{fill:#C9D1D9;} .sep{stroke:#30363D;} }
+            </style>
+            <defs><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38BDF8"/><stop offset="0.5" stop-color="#22D3EE"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
+            <rect class="c" x="1" y="1" width="758" height="118" rx="14" stroke-width="1.5"/>
+            <rect x="1" y="1" width="758" height="5" rx="2.5" fill="url(#bar)"/>
+            %(cells)s
+          </svg>'''
+          open("dist/dashboard.svg", "w", encoding="utf-8").write(tmpl % {"cells": cells})
+          print("dashboard", stars, forks, followers, public)
+          PY
+
+      - name: Generate recent activity svg
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p dist
+          python3 - <<'PY'
+          import json, os, urllib.request, html
+          tok = os.environ.get("GH_TOKEN", "")
+          def api(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "profile-readme", "Authorization": "Bearer %s" % tok, "Accept": "application/vnd.github+json"})
+              return json.load(urllib.request.urlopen(req, timeout=30))
+          try:
+              events = api("https://api.github.com/users/yan-sheng-li/events/public?per_page=30")
+          except Exception:
+              events = []
+          VERB = {"PushEvent": ("推送代码到", "Pushed to"), "CreateEvent": ("创建了", "Created"), "PullRequestEvent": ("提交 PR 到", "PR in"), "IssuesEvent": ("提交 Issue 到", "Issue in"), "WatchEvent": ("Star 了", "Starred"), "ForkEvent": ("Fork 了", "Forked"), "ReleaseEvent": ("发布版本于", "Released in")}
+          picked = []
+          for e in events:
+              t = e.get("type")
+              repo = (e.get("repo") or {}).get("name", "")
+              if t in VERB and repo:
+                  picked.append((VERB[t][0], VERB[t][1], repo))
+              if len(picked) >= 5:
+                  break
+          if not picked:
+              picked = [("持续创作中", "Building things", "yan-sheng-li")]
+          rows = ""
+          y = 52
+          for cn, en, repo in picked:
+              repo_esc = html.escape(repo)
+              rows += '<circle cx="26" cy="%d" r="4" fill="url(#bar)"/>' % (y - 4)
+              rows += '<text x="42" y="%d" class="cn">%s <tspan class="repo">%s</tspan></text>' % (y, cn, repo_esc)
+              rows += '<text x="42" y="%d" class="en">%s %s</text>' % (y + 16, en, repo_esc)
+              y += 40
+          tmpl = '''<svg xmlns="http://www.w3.org/2000/svg" width="480" height="%(h)d" viewBox="0 0 480 %(h)d" role="img" aria-label="recent activity">
+            <style>
+              .c{fill:#FFFFFF;stroke:#D0D7DE}
+              .t{fill:#0284C7;font:700 15px 'Segoe UI','PingFang SC',sans-serif}
+              .cn{fill:#1F2328;font:600 13px 'Segoe UI','PingFang SC',sans-serif}
+              .repo{fill:#0284C7}
+              .en{fill:#6E7781;font:400 10px 'Segoe UI',sans-serif}
+              @media(prefers-color-scheme:dark){.c{fill:#0D1117;stroke:#30363D}.t{fill:#38BDF8}.cn{fill:#C9D1D9}.repo{fill:#38BDF8}.en{fill:#8B949E}}
+            </style>
+            <defs><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#38BDF8"/><stop offset="0.5" stop-color="#22D3EE"/><stop offset="1" stop-color="#2DD4BF"/></linearGradient></defs>
+            <rect class="c" x="1" y="1" width="478" height="%(hh)d" rx="14" stroke-width="1.5"/>
+            <rect x="1" y="1" width="478" height="5" rx="2.5" fill="url(#bar)"/>
+            <text x="24" y="30" class="t">最近动态 · Recent Activity</text>
+            %(rows)s
+          </svg>''' % {"h": y + 6, "hh": y + 4, "rows": rows}
+          open("dist/activity.svg", "w", encoding="utf-8").write(tmpl)
+          print("activity rows", len(picked))
+          PY
+
+      - name: Generate 3D contribution graph
+        continue-on-error: true
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: yan-sheng-li
+
+      - name: Copy 3D graph into dist
+        continue-on-error: true
+        run: |
+          mkdir -p dist
+          cp -f profile-3d-contrib/profile-night-green.svg dist/profile-3d.svg || true
+
+      - name: Push to output branch (only if changed)
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
