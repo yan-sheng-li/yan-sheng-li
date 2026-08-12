@@ -246,6 +246,8 @@
 [![个人网站 liyansheng.top](https://img.shields.io/badge/https://liyansheng.top-38BDF8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://liyansheng.top/)
 [![Gitee 主页 yan-sheng-li](https://img.shields.io/badge/Gitee-码云-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/yan-sheng-li)
 [![邮箱 Email liyansheng0214@163.com](https://img.shields.io/badge/邮箱_Email-liyansheng0214@163.com-0891B2?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:liyansheng0214@163.com)
+[![微信 Wechat 17641244340](https://img.shields.io/badge/微信-17641244340-07C160?style=for-the-badge&logo=wechat&logoColor=white)](https://wechat.com/)
+[![QQ 1761724207](https://img.shields.io/badge/QQ-1761724207-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white)](https://user.qzone.qq.com/1761724207)
 
 </div>
 
