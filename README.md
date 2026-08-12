@@ -26,27 +26,19 @@
   lines 以 ; 分隔，共 4 句（≥3）、每句 ≤50 字符，含昵称与简介，全中文以确保书法字体字形完整。
   【重要】中文必须做 URL 百分号编码，否则 GitHub 图片代理(camo)取不到图导致横幅空白。
 -->
-<div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=170&section=header" alt="顶部天蓝到薄荷渐变波浪装饰" />
-  <br />
+<!-- <div align="center">
   <img
     src="https://readme-typing-svg.demolab.com/?font=Ma+Shan+Zheng&size=36&duration=3500&pause=800&center=true&vCenter=true&width=680&height=100&repeat=true&color=0891B2&lines=yan-sheng-li;%E4%B8%80%E4%B8%AA%E7%97%B4%E8%BF%B7%E4%BA%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%8A%80%E6%9C%AF%E7%9A%84%E5%AD%A6%E7%94%9F;A%20Student%20Obsessed%20With%20Computer%20Tech;%E5%AD%A6%E4%BB%A5%E8%87%B4%E7%94%A8%E6%89%8D%E6%98%AF%E7%8E%8B%E9%81%93;Learn%20By%20Doing%2C%20Master%20By%20Using"
     alt="yan-sheng-li"
   />
-  <br />
-  <!-- 无限横向滚动跑马灯：手写 SMIL 动画 SVG，双拷贝无缝循环，边缘渐隐遮罩，本地资源稳定不破图 -->
-  <img width="72%" src="assets/marquee.svg" alt="滚动横幅：学以致用才是王道 · Vibe Coding · Full-Stack · Game Dev · Automation · Open Source" />
-  <br />
-  <!-- 星空微光：手写 SMIL 动画 SVG，缓慢错峰闪烁 + 旋转四角星，天蓝主题，本地资源稳定 -->
-  <img width="86%" src="assets/stars.svg" alt="星空微光装饰 · twinkling starfield" />
-</div>
+</div> -->
 <!-- SECTION:TYPING_BANNER:END -->
 
 <!-- SECTION:ABOUT_ME:START -->
-<h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/user-male-circle.png" alt="关于我图标" />&nbsp; 关于我 · About Me</h2>
+<!-- <h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/user-male-circle.png" alt="关于我图标" />&nbsp; 关于我 · About Me</h2>
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
-</div>
+</div> -->
 
 <h1 align="center">木子空间</h1>
 
@@ -162,9 +154,9 @@
   自定义数据看板：由每日刷新工作流经 GitHub API 汇总 公开仓库数 / Star 总数 / Fork 总数 / Followers，
   生成主题自适应 SVG(dashboard.svg) 推到 output 分支，每日自动更新；alt 非空。
 -->
-<div align="center">
+<!-- <div align="center">
   <img src="https://raw.githubusercontent.com/yan-sheng-li/yan-sheng-li/output/dashboard.svg" alt="数据看板 · 公开仓库数 / Star 总数 / Fork 总数 / Followers（每日自动更新）" />
-</div>
+</div> -->
 
 <!--
   最近动态：由每日刷新工作流经 GitHub Events API 抓取最近公开动态，生成中英双语主题自适应 SVG(activity.svg)，
@@ -273,8 +265,5 @@
 
 <p align="center"><sub>Designed with <img height="14" src="https://img.icons8.com/fluency/48/like.png" alt="爱心" /> by yan-sheng-li · Powered by GitHub Actions &amp; Open Source</sub></p>
 
-<div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2DD4BF,50:22D3EE,100:38BDF8&height=150&section=footer" alt="底部薄荷到天蓝渐变波浪装饰" />
-</div>
 
 <!-- SECTION:FOOTER:END -->
