@@ -35,10 +35,8 @@
 <!-- SECTION:TYPING_BANNER:END -->
 
 <!-- SECTION:ABOUT_ME:START -->
-<!-- <h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/user-male-circle.png" alt="关于我图标" />&nbsp; 关于我 · About Me</h2>
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
-</div> -->
+<h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/user-male-circle.png" alt="关于我图标" />&nbsp; 关于我 · About Me</h2>
+
 
 <h1 align="center">木子空间</h1>
 
@@ -54,16 +52,13 @@
 - <img height="18" src="https://img.icons8.com/fluency/48/source-code.png" alt="开源" /> 热衷于开源文化，积极参与各类开源项目的维护与贡献
 - <img height="18" src="https://img.icons8.com/fluency/48/gears.png" alt="自动化" /> 致力于构建高效的自动化工作流，提升开发与运维效率
 - <img height="18" src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="AI" /> 探索 AI 赋能开发，实践 AI 辅助编程与智能化方案落地
-- <img height="18" src="https://img.icons8.com/fluency/48/domain.png" alt="网站" /> 个人博客：[liyansheng.top](https://liyansheng.top/)
+- <img height="18" src="https://img.icons8.com/fluency/48/domain.png" alt="网站" /> 个人网站：[liyansheng.top](https://liyansheng.top/)
 
 
 <!-- SECTION:ABOUT_ME:END -->
 
 <!-- SECTION:TECH_STACK:START -->
 <h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/source-code.png" alt="技术栈图标" />&nbsp; 技术栈 · Tech Stack</h2>
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
-</div>
 
 <!--
   技能图标墙：skillicons.dev 一张 SVG 渲染整齐的技术图标网格，作为技术栈的视觉总览；下方为详细分类徽章。
@@ -146,9 +141,6 @@
 
 <!-- SECTION:STATS:START -->
 <h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/combo-chart.png" alt="数据统计图标" />&nbsp; GitHub 数据 · GitHub Stats</h2>
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
-</div>
 
 <!--
   自定义数据看板：由每日刷新工作流经 GitHub API 汇总 公开仓库数 / Star 总数 / Fork 总数 / Followers，
@@ -178,9 +170,6 @@
 
 <!-- SECTION:VISITOR_SNAKE:START -->
 <h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/conference-call.png" alt="访客图标" />&nbsp; 访客与贡献 · Visitors &amp; Contributions</h2>
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
-</div>
 
 <!--
   访客计数徽章（komarev / ghpvc）：以数字形式展示主页累计访问次数。
@@ -229,9 +218,6 @@
 
 <!-- SECTION:SOCIAL:START -->
 <h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/link.png" alt="联系图标" />&nbsp; 联系我 · Connect With Me</h2>
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
-</div>
 
 <!--
   社交链接：<div align="center"> 内每个平台为 [![alt](shields.io badgeURL)](targetURL) 形式的静态 Markdown 超链接徽章（Property 11 / 需求 6.4）。
