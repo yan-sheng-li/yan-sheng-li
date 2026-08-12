@@ -50,11 +50,11 @@
   <a href="https://github.com/yan-sheng-li"><img src="https://img.shields.io/github/followers/yan-sheng-li?style=flat-square&logo=github&label=Followers&color=22D3EE&labelColor=0D1117" alt="GitHub Followers · GitHub 关注数" /></a>
 </p>
 
-- <img height="18" src="https://img.icons8.com/fluency/48/idea.png" alt="专注" /> 专注于计算机技术的学习与实践，热爱钻研底层原理与工程实现
-- <img height="18" src="https://img.icons8.com/fluency/48/source-code.png" alt="开源" /> 持续维护多个开源项目，享受与社区一起打磨代码的过程
-- <img height="18" src="https://img.icons8.com/fluency/48/gears.png" alt="自动化" /> 热衷于自动化工具的研发，让重复繁琐的工作交给程序完成
-- <img height="18" src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="AI" /> 资深 Vibe Coding 爱好者，享受与 AI 结对编程、把想法快速变成产品
-- <img height="18" src="https://img.icons8.com/fluency/48/domain.png" alt="网站" /> 个人网站：[liyansheng.top](https://liyansheng.top/)
+
+- <img height="18" src="https://img.icons8.com/fluency/48/source-code.png" alt="开源" /> 热衷于开源文化，积极参与各类开源项目的维护与贡献
+- <img height="18" src="https://img.icons8.com/fluency/48/gears.png" alt="自动化" /> 致力于构建高效的自动化工作流，提升开发与运维效率
+- <img height="18" src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="AI" /> 探索 AI 赋能开发，实践 AI 辅助编程与智能化方案落地
+- <img height="18" src="https://img.icons8.com/fluency/48/domain.png" alt="网站" /> 个人博客：[liyansheng.top](https://liyansheng.top/)
 
 
 <!-- SECTION:ABOUT_ME:END -->
@@ -249,21 +249,7 @@
 
 </div>
 
-<!-- SECTION:SOCIAL:END -->
 
-<!-- SECTION:FOOTER:START -->
-<h2 align="center"><img height="28" src="https://img.icons8.com/fluency/48/like.png" alt="感谢图标" />&nbsp; 感谢访问 · Thanks for Visiting</h2>
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
-</div>
-
-<!--
-  页脚收尾：与其它区块一致的居中标题 + 渐变分隔条已在上方给出。
-  此处补充一句居中的感谢/收尾文字，呼应"青云"主题与开源精神，保持整体视觉一致性（需求 8.2）。
--->
-<p align="center">感谢你抵达这里 · 愿代码与热爱同行 <img height="18" src="https://img.icons8.com/fluency/48/rocket.png" alt="火箭" /></p>
-
-<p align="center"><sub>Designed with <img height="14" src="https://img.icons8.com/fluency/48/like.png" alt="爱心" /> by yan-sheng-li · Powered by GitHub Actions &amp; Open Source</sub></p>
 
 
 <!-- SECTION:FOOTER:END -->
