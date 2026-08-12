@@ -48,15 +48,13 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:38BDF8,50:22D3EE,100:2DD4BF&height=3" alt="天蓝到青到薄荷的渐变分隔条" width="100%" />
 </div>
 
-<h1 align="center">yan-sheng-li <sub>(he/him)</sub></h1>
+<h1 align="center">木子空间</h1>
 
 
 
 <!-- 快捷入口：一进主页即可直达 网站 / B站 / 爱发电，并展示 GitHub 关注数；flat-square 轻量风格区别于底部社交区 -->
 <p align="center">
-  <a href="https://www.your-site.com"><img src="https://img.shields.io/badge/个人网站-Website-38BDF8?style=flat-square&logo=googlechrome&logoColor=white" alt="个人网站 · Website" /></a>
-  <a href="https://space.bilibili.com/000000"><img src="https://img.shields.io/badge/Bilibili-哔哩哔哩-FB7299?style=flat-square&logo=bilibili&logoColor=white" alt="Bilibili · 哔哩哔哩" /></a>
-  <a href="https://ifdian.net/a/youraccount"><img src="https://img.shields.io/badge/爱发电-Sponsor-2DD4BF?style=flat-square&logo=afdian&logoColor=white" alt="爱发电 · Sponsor" /></a>
+  <a href="https://liyansheng.top/"><img src="https://img.shields.io/badge/个人网站-Website-38BDF8?style=flat-square&logo=googlechrome&logoColor=white" alt="个人网站 · Website" /></a>
   <a href="https://github.com/yan-sheng-li"><img src="https://img.shields.io/github/followers/yan-sheng-li?style=flat-square&logo=github&label=Followers&color=22D3EE&labelColor=0D1117" alt="GitHub Followers · GitHub 关注数" /></a>
 </p>
 
@@ -64,7 +62,7 @@
 - <img height="18" src="https://img.icons8.com/fluency/48/source-code.png" alt="开源" /> 持续维护多个开源项目，享受与社区一起打磨代码的过程
 - <img height="18" src="https://img.icons8.com/fluency/48/gears.png" alt="自动化" /> 热衷于自动化工具的研发，让重复繁琐的工作交给程序完成
 - <img height="18" src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="AI" /> 资深 Vibe Coding 爱好者，享受与 AI 结对编程、把想法快速变成产品
-- <img height="18" src="https://img.icons8.com/fluency/48/domain.png" alt="网站" /> 个人网站：[www.your-site.com](https://www.your-site.com)
+- <img height="18" src="https://img.icons8.com/fluency/48/domain.png" alt="网站" /> 个人网站：[liyansheng.top](https://liyansheng.top/)
 
 <!--
   每日一言：由每日刷新工作流生成主题自适应 SVG 推到 output 分支，每日自动更新；
@@ -87,7 +85,7 @@
   技能图标墙：skillicons.dev 一张 SVG 渲染整齐的技术图标网格，作为技术栈的视觉总览；下方为详细分类徽章。
 -->
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=py,java,kotlin,c,cpp,cs,ts,js,rust,go,vue,react,vite,tailwind,threejs,html,css,flutter,electron,tauri,nodejs,bun,fastapi,spring,dotnet,qt,mysql,postgres,mongodb,sqlite,redis,nginx,docker,kubernetes,linux,prometheus,grafana,unity,godot,unreal,ps,pr,git,github,vscode,pycharm,visualstudio,androidstudio,ubuntu,windows&perline=13" alt="技能图标墙：常用编程语言、框架、数据库、云原生、游戏与工具技术图标总览（GoLand 见下方分类徽章）" />
+  <img src="https://skillicons.dev/icons?i=py,java,ts,js,vue,vite,tailwind,threejs,html,css,tauri,nodejs,bun,fastapi,spring,mysql,sqlite,redis,nginx,docker,kubernetes,linux,prometheus,grafana,ps,git,github,vscode,pycharm,ubuntu,windows&perline=13" alt="技能图标墙：常用编程语言、框架、数据库、云原生" />
 </div>
 
 <!--
@@ -192,36 +190,6 @@
   streak-stats 参数名不同（background/ring/fire/currStreakLabel/sideLabels/dates/stroke 等），但色值取相同值。
 -->
 
-<!-- 通用统计 + 常用语言 并排一行（table 两列），连续贡献单独居中一行 -->
-<table>
-  <tr>
-    <td width="50%" valign="top" align="center">
-      <b><img height="18" src="https://img.icons8.com/fluency/48/combo-chart.png" alt="通用统计图标" /> 通用统计 · Overall Stats</b>
-      <br />
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=yan-sheng-li&show_icons=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&icon_color=22D3EE&border_color=30363D" />
-        <img alt="yan-sheng-li 的 GitHub 通用统计卡片：展示 Star 总数、提交数、Follower 数与贡献数" src="https://github-readme-stats.vercel.app/api?username=yan-sheng-li&show_icons=true&count_private=true&include_all_commits=true&bg_color=FFFFFF&title_color=0284C7&text_color=1F2328&icon_color=0891B2&border_color=D0D7DE" />
-      </picture>
-    </td>
-    <td width="50%" valign="top" align="center">
-      <b><img height="18" src="https://img.icons8.com/fluency/48/chat.png" alt="常用语言图标" /> 常用语言 · Most Used Languages</b>
-      <br />
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs?username=yan-sheng-li&layout=compact&langs_count=8&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&icon_color=22D3EE&border_color=30363D" />
-        <img alt="yan-sheng-li 的常用编程语言占比卡片：展示占比最高的前若干种语言及其百分比" src="https://github-readme-stats.vercel.app/api/top-langs?username=yan-sheng-li&layout=compact&langs_count=8&bg_color=FFFFFF&title_color=0284C7&text_color=1F2328&icon_color=0891B2&border_color=D0D7DE" />
-      </picture>
-    </td>
-  </tr>
-</table>
-
-<h4 align="center"><img height="20" src="https://img.icons8.com/fluency/48/light-on.png" alt="连续贡献图标" />&nbsp; 连续贡献 · Contribution Streak</h4>
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=yan-sheng-li&background=0D1117&ring=38BDF8&fire=22D3EE&currStreakLabel=38BDF8&currStreakNum=C9D1D9&sideLabels=C9D1D9&sideNums=C9D1D9&dates=C9D1D9&stroke=30363D" />
-    <img alt="yan-sheng-li 的连续贡献天数卡片：展示当前连续贡献天数与历史最长连续贡献天数" src="https://streak-stats.demolab.com/?user=yan-sheng-li&background=FFFFFF&ring=0284C7&fire=0891B2&currStreakLabel=0284C7&currStreakNum=1F2328&sideLabels=1F2328&sideNums=1F2328&dates=1F2328&stroke=D0D7DE" />
-  </picture>
-</div>
-
 <!-- SECTION:STATS:END -->
 
 <!-- SECTION:VISITOR_SNAKE:START -->
@@ -291,9 +259,9 @@
 -->
 <div align="center">
 
-[![个人网站 www.your-site.com](https://img.shields.io/badge/https://liyansheng.top-38BDF8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://liyansheng.top/)
-[![Gitee 主页 码云](https://img.shields.io/badge/Gitee-码云-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/<你的用户名>)
-[![邮箱 Email <你的邮箱>](https://img.shields.io/badge/邮箱_Email-<你的邮箱>-0891B2?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:<你的邮箱>)
+[![个人网站 liyansheng.top](https://img.shields.io/badge/https://liyansheng.top-38BDF8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://liyansheng.top/)
+[![Gitee 主页 yan-sheng-li](https://img.shields.io/badge/Gitee-码云-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/yan-sheng-li)
+[![邮箱 Email liyansheng0214@163.com](https://img.shields.io/badge/邮箱_Email-liyansheng0214@163.com-0891B2?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:liyansheng0214@163.com)
 
 </div>
 
