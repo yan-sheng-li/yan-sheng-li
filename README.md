@@ -64,14 +64,6 @@
 - <img height="18" src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="AI" /> 资深 Vibe Coding 爱好者，享受与 AI 结对编程、把想法快速变成产品
 - <img height="18" src="https://img.icons8.com/fluency/48/domain.png" alt="网站" /> 个人网站：[liyansheng.top](https://liyansheng.top/)
 
-<!--
-  每日一言：由每日刷新工作流生成主题自适应 SVG 推到 output 分支，每日自动更新；
-  作为「关于我」文字要点之后的动态卡片收尾，形成 文字 → 动态卡片 的自然流。
-  单张自适应 SVG(内置 prefers-color-scheme)，非 <picture>；alt 非空描述用途。
--->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/yan-sheng-li/yan-sheng-li/output/quote.svg" alt="每日一言 · 编程与学习箴言（每日自动更新）" />
-</div>
 
 <!-- SECTION:ABOUT_ME:END -->
 
